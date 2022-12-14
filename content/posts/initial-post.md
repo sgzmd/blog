@@ -1,7 +1,7 @@
 ---
-title: "Initial Post"
+title: "Hello, world!"
 date: 2022-12-14T16:01:29Z
 draft: false
 ---
 
-Hello, world!
+More content to be added soon :)
