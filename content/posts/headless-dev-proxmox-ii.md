@@ -3,7 +3,7 @@ title: "Headless developer machine on Proxmox - Part II"
 date: 2022-12-20T18:17:31Z
 draft: false
 ---
-
+  
 In the [previous blogpost](/posts/headless-dev-proxmox/) we discussed how to
 configure PCI passthrough on Proxmox; presuming you've done it, it's now the
 time to configure graphically accelerated remote access, so on we go!
