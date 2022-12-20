@@ -1,7 +1,7 @@
 ---
 title: "Difficulties of Blogging"
 date: 2022-12-20T19:26:47Z
-draft: true
+draft: false
 ---
 
 Blogging is hard. To anyone who tells you it's easy, feel free to punch them in
