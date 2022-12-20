@@ -4,3 +4,9 @@
 [submodule "themes/maverick"]
 	path = themes/maverick
 	url = https://github.com/canhtran/maverick
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke
+[submodule "themes/maverick2"]
+	path = themes/maverick2
+	url = https://github.com/canhtran/maverick
