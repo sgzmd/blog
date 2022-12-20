@@ -1,7 +1,7 @@
 baseURL: https://blog.kirillov.cc/
 languageCode: en-GB
 title: Roman's blog
-theme: maverick
+theme: hacked-maverick
 staticDir:
   - content/static
 permalinks:
