@@ -20,6 +20,9 @@ menu:
       name: Post
       url: /posts/
       weight: -200
+    - identifier: credits
+      name: Credits
+      url: /credits/
 markup:
   goldmark:
     renderer:
