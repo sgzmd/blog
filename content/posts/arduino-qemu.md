@@ -1,7 +1,7 @@
 ---
 title: "Arduino + Rust + Qemu = ?"
 date: 2022-12-27T16:07:55Z
-draft: true
+draft: false
 ---
 
 I love _writing code_ for hardware. I don't like hardware per se (must have
