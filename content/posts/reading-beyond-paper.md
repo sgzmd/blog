@@ -43,7 +43,7 @@ the hoops of setting it right just-for-you - what a marvel it is!
 Around the same time I believe first e-ink devices have emerged. They were
 expensive, and they were not really good - and I had a fair few of them. At some
 point Amazon's Kindle has very clearly manifested itself as the king of e-book
-reading in the West - don't get me wrong, Kindle is not a bad devices. It's just
+reading in the West - don't get me wrong, Kindle is not a bad device. It's just
 .. not very good. 
 
 In many ways, it follows the same-old mantra of Apple -
