@@ -4,7 +4,7 @@
 }
 
 body {
-    font: 1rem/1.5 -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    font: 1rem/1.6 Open Sans;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -113,9 +113,8 @@ pre {
 }
 
 code, pre {
-    font-family: San Francisco Mono, Monaco, "Consolas", "Lucida Console","DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+    font-family: Roboto Mono, San Francisco Mono, Monaco, "Consolas", "Lucida Console","DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
     font-size: normal;
-    font-size: small;
     background: #eee
 }
 
@@ -147,7 +146,7 @@ ul, ol {
 }
 
 .content {
-    max-width: 80ch;
+    max-width: 100ch;
     margin: 0 auto;
     padding-bottom: 2.5rem;
     // text-align: justify;
