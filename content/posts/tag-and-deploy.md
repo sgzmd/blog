@@ -8,7 +8,7 @@ I have a bunch of personal services which I deploy using Docker. One issue I was
 constantly struggling with is how to know from which Git revision Docker
 container was built - and how can I go to that revision easily. 
 
-While in "serious" development you'd use a CI server and release process, for my
+While in "serious" development you'd use a CI server and some form of release process, for my
 toy service I ended up hacking together a very simple script that gives me just
 enough to get the job done:
 
