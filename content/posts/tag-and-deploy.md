@@ -1,7 +1,7 @@
 ---
 title: "Tag and Deploy to Docker"
 date: 2023-02-26T12:53:55Z
-draft: true
+draft: false
 ---
 
 I have a bunch of personal services which I deploy using Docker. One issue I was
