@@ -115,7 +115,11 @@ pre {
 code, pre {
     font-family: Roboto Mono, San Francisco Mono, Monaco, "Consolas", "Lucida Console","DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
     font-size: normal;
-    background: #eee
+}
+
+pre:has(code) {
+    background: #222;
+    color: #eee;
 }
 
 code {
