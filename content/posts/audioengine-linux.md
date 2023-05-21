@@ -6,7 +6,8 @@ draft: false
 
 I have been using Audioengine HD3 speakers for a while now, and I am very happy
 whenever I'm using them on Mac or Windows. However, whenever I am about to do
-some hacking and boot into Linux, they just refuse to work.
+some hacking and boot into Linux (Ubuntu 22.04 for me, but seems to be it's
+exactly the same across the board), they just refuse to work.
 
 Well, not exactly refuse to work - if you happen to have a `.wav` file
 'formatted' at 48kHz, it works just fine, but that's not exactly what I call
