@@ -63,7 +63,6 @@ of physical disks - but rather a list of mounted file systems).
 ![Far Manager on Linux](/static/far/far_alt_f2.png)
 
 Far2L is marked as Beta, and prospective users are cautioned that their homes
-may catch fire, their dogs might flee, and their spouses may depart - but so
-far, - but ~~none of that has befallen me~~ it's been working just fine for me for the
+may catch fire, their dogs might flee, and their spouses may depart - but ~~none of that has befallen me~~ it's been working just fine for me for the
 last couqle of months, and getting better with every new build. I suppose it's
 not mere nostalgia if it really *does* work, don't you think? 
