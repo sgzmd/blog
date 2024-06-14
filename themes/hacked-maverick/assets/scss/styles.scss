@@ -106,7 +106,7 @@ a.heading-link {
 }
 
 pre {
-    padding: .5rem;
+    padding: .7rem;
     overflow: auto;
     overflow-x: scroll;
     overflow-wrap: normal;
@@ -118,8 +118,11 @@ code, pre {
 }
 
 pre:has(code) {
-    background: #222;
-    color: #eee;
+    // background: #222;
+    // color: #eee;
+
+    background:#eee;
+    color: #222;
 }
 
 code {

@@ -51,10 +51,6 @@ outputs:
   section:
     - HTML
 
-markup:
-  highlight:
-    guessSyntax: false
-
 outputFormats:
   RSS:
     mediatype: application/rss
