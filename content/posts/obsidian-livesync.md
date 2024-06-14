@@ -110,7 +110,7 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 ```
 What we do here is a classic two-stage build. First we use `caddy:builder` which has `xcaddy` in it to build Caddy binary, and then we take `caddy:latest` and replace the actual binary with the one we've just built. 
 
-The last thing we need is the actual `Caddyfile` which will explain Caddy what do we want from it:
+The last thing we need is the actual `Caddyfile` aka Caddy config, which will explain Caddy what do we want from it:
 
 ```
 # I could not find a meaningful way to externalise 
