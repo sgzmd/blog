@@ -1,6 +1,6 @@
 ---
 title: "Obsidian with LiveSync: your very own CouchDB-backed cloud notes"
-date: 2024-06-14T12:25:06+01:00
+date: 2024-06-14T13:25:06+01:00
 draft: false
 ---
 
