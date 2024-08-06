@@ -1,5 +1,5 @@
 ---
-title: "Perception is Reality or Hidden Challenges in Cybersecurity"
+title: "Android Safety UX: Perception is Reality or Hidden Challenges in Cybersecurity"
 date: 2024-08-06T13:30:42+01:00
 draft: false
 ---
