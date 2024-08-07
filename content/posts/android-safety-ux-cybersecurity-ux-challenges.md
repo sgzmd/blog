@@ -16,4 +16,13 @@ Android's efforts to improve user security began long before that - but for a ve
 
 Android was and remains an open ecosystem - and as everywhere, not everyone means well, and there are people and companies who are willing to walk an extra mile (or ten) to exploit Android users for their gain. One particular trend we were seeing more and more often back then, was that hostile actors were exploiting users fear, uncertainty and doubts (which [are not limited](https://userlab.utk.edu/publications/bitaab2020scam) to users digital security!) about their own safety, to trick them into installing "security" apps which were asking for some excessive permissions ... et voila - _now_ users actually have a problem.
 
-So the problem, as it turned out, was at the very least two-pronged: we had to improve factual user safety, as well as address users' _perception_ of their safety at the same time. We had to _keep_ users safe, and keep them informed about that - without being too much into their face. Needless to say, this was a new thing to do for Android (or, frankly, for the industry at large). In the next post I'll talk about [Google Play Protect](https://developers.google.com/android/play-protect/client-protections) - our first step in that direction, and what followed it.
+So the problem, as it turned out, was at the very least two-pronged: we had to
+improve factual user safety, as well as address users' _perception_ of their
+safety at the same time. We had to _keep_ users safe, and keep them informed
+about that - without being too much into their face. Needless to say, this was a
+new thing to do for Android (or, frankly, for the industry at large). In the
+next post I'll talk about [Google Play
+Protect](https://developers.google.com/android/play-protect/client-protections)
+- our first step in that direction, and what followed it.
+
+*Update:* second post in the series is now available - [Android Safety UX: Package Verification in the Android OS](https://blog.kirillov.cc/posts/android-safety-ux-package-verification/). 

@@ -6,7 +6,12 @@ draft: false
 
 This is the second post in Android Safety UX series - you can find the first one [right here](https://blog.kirillov.cc/posts/android-safety-ux-cybersecurity-ux-challenges/).
 
-In the previous post, we mentioned that Google Play Protect was our first step in the direction of building Android's safety UX. Let's dive straight in - but before that, I feel like we need a crash course in how Android's anti-malware protections work - I figured this might be useful since I couldn't find a comprehensive view of this available anywhere in the open (even though most of it isn't really a secret in any sense of the word).
+In the previous post, we mentioned that Google Play Protect was our first step
+in the direction of building Android's safety UX. Before we dive straight into
+that, I feel like we need a crash course in how Android's anti-malware protections work - I figured this
+might be useful since I couldn't find a comprehensive view of this available
+anywhere in the open (even though most of it isn't really a secret in any sense
+of the word).
 
 This section will be fairly technical since it lays the foundation and provides some answers to why things were built the way they were built.
 
