@@ -1,13 +1,20 @@
 ---
 title: "Android Safety UX: Package Verification in the Android OS"
-date: 2024-08-06T13:30:42+01:00
+date: 2024-08-07T13:30:42+01:00
 draft: false
 ---
 
-This is the second post in Android Safety UX series - you can find the first one [right here](https://blog.kirillov.cc/posts/android-safety-ux-cybersecurity-ux-challenges/).
+## Part III - Package Verification in the Android OS
+
+> This is the third post in Android Safety UX series - you can find the first 
+> one [right here](https://blog.kirillov.cc/posts/android-safety-ux-cybersecurity-ux-challenges/).
 
 In the previous post, we mentioned that Google Play Protect was our first step
-in the direction of building Android's safety UX. Before we dive straight into
+in the direction of building Android's safety UX. Google Play Protect is
+Android's dedicated anti-malware solution, and is currently the most widely
+deployed anti-virus on Earth, protecting over 3 billion devices.
+
+Before we dive further into
 that, I feel like we need a crash course in how Android's anti-malware protections work - I figured this
 might be useful since I couldn't find a comprehensive view of this available
 anywhere in the open (even though most of it isn't really a secret in any sense

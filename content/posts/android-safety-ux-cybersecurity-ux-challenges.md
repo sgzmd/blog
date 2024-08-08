@@ -1,6 +1,6 @@
 ---
 title: "Android Safety UX: Perception is Reality or Hidden Challenges in Cybersecurity"
-date: 2024-08-06T13:30:42+01:00
+date: 2024-08-05T13:30:42+01:00
 draft: false
 ---
 
@@ -25,4 +25,4 @@ next post I'll talk about [Google Play
 Protect](https://developers.google.com/android/play-protect/client-protections)
 - our first step in that direction, and what followed it.
 
-*Update:* second post in the series is now available - [Android Safety UX: Package Verification in the Android OS](https://blog.kirillov.cc/posts/android-safety-ux-package-verification/). 
+*Update:* second post in the series is now available - [Part II - Safety UX: what's that all about?](https://blog.kirillov.cc/posts/android-safety-ux-what-about/). 

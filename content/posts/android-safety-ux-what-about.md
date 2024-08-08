@@ -1,16 +1,15 @@
 ---
 title: "Android Safety UX: What's that all about?"
-date: 2024-08-07T13:01:25+01:00
+date: 2024-08-06T13:01:25+01:00
 draft: false
 ---
 
-> This is the third post in Android Safety UX series - you can find the first
+> This is the second post in Android Safety UX series - you can find the first
 > one [right here](https://blog.kirillov.cc/posts/android-safety-ux-cybersecurity-ux-challenges/).
 
-In the [previous
-post](https://blog.kirillov.cc/posts/android-safety-ux-package-verification/),
-we discussed Android Package Verification - a mechanism that ensures that the
-app you are about to install is what it claims to be. In this post, we will
+## Part II - Safety UX: what's that all about?
+
+Previous post was but a teaser for things to come. Here, we will
 start talking about our journey towards building Android's safety UX - how we
 came to the realisation that the work is needed, and what we did to address it.
 
