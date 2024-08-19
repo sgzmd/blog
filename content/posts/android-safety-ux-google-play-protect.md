@@ -55,4 +55,4 @@ In retrospect, this feels like an obvious thing but at that time we realised tha
 
 Problem is, it wasn’t enough. What was the problem? Come back later to find out about our next steps in building Android's Safety UX - there's a lot more to come.
 
-*Update*: [5th article in the series](/posts/android-safety-ux-now-what/) is out!
+*Update: [5th article in the series](/posts/android-safety-ux-now-what/) is out!*
