@@ -54,3 +54,5 @@ This, however, had an interesting corollary in the sense that since users are se
 In retrospect, this feels like an obvious thing but at that time we realised that users are really looking to have one important question answered straight away - if they are safe. The status shield was addressing exactly that. To the day, Google Play Protect remains the most recognised Google’s brands related to security - and possibly the most recognised security brand ever. 
 
 Problem is, it wasn’t enough. What was the problem? Come back later to find out about our next steps in building Android's Safety UX - there's a lot more to come.
+
+*Update*: [5th article in the series](/posts/android-safety-ux-now-what/) is out!
