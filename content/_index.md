@@ -16,6 +16,5 @@ anything I feel like mentioning.
 
 If you would like to reach out:
 
-- ✉️ Email: [roman@kirillov.cc](mailto:roman@kirillov.cc)
 - 🧵 Threads: [threads.net/@sgzmd](https://threads.net/@sgzmd)
 - 🔗 LinkedIn: [linkedin.com/in/sgzmd](https://linkedin.com/in/sgzmd)
