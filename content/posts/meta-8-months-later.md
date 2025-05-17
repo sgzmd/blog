@@ -1,7 +1,11 @@
 ---
-title: "Joining Meta – 8 months later"
+title: "Joining Meta: 8 Months Later"
 date: 2025-05-17T07:47:16+01:00
 draft: false
+tags: 
+  - Meta
+  - Meta 8 Months Later
+  - Tech
 ---
 
 Someone pinged me yesterday, saying they had been reading my posts before joining Meta, and now they’re curious what I would've done differently, knowing what I know now. It got me thinking.
