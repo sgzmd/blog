@@ -2,6 +2,11 @@
 title: "Android Safety UX: Package Verification in the Android OS"
 date: 2024-08-07T13:30:42+01:00
 draft: false
+tags: 
+  - Android
+  - Android Safety UX
+  - Tech
+
 ---
 
 ## Part III - Package Verification in the Android OS

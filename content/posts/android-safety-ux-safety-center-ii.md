@@ -2,6 +2,11 @@
 title: "Android Safety UX: Safety Center 2.0"
 date: 2024-09-15T09:57:16+01:00
 draft: false
+tags: 
+  - Android
+  - Android Safety UX
+  - Tech
+
 ---
 
 Welcome to the penultimate post of the Safety UX series! In the [last post](https://blog.kirillov.cc/posts/android-safety-ux-safety-centre/) we introduced Safety Center - a unified security surface for all of Android, but the journey didn't end there. There was a number of problems with this approach and a number of corners to square.

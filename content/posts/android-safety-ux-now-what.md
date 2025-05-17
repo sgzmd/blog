@@ -2,6 +2,11 @@
 title: "Android Safety UX: From Play Protect to Safety Center"
 date: 2024-08-19T09:55:16+01:00
 draft: false
+tags: 
+  - Android
+  - Android Safety UX
+  - Tech
+
 ---
 
 Welcome to the series of posts on the foundations of safety UX in Android.

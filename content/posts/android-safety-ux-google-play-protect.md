@@ -2,6 +2,11 @@
 title: "Android Safety UX: Google Play Protect"
 date: 2024-08-10T16:30:42+01:00
 draft: false
+tags: 
+  - Android
+  - Android Safety UX
+  - Tech
+
 ---
 
 Welcome to the series of posts on the foundations of safety UX in Android.

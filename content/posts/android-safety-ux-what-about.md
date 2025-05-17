@@ -2,6 +2,10 @@
 title: "Android Safety UX: What's that all about?"
 date: 2024-08-06T13:01:25+01:00
 draft: false
+tags: 
+  - Android
+  - Android Safety UX
+  - Tech
 ---
 
 > This is the second post in Android Safety UX series - you can find the first

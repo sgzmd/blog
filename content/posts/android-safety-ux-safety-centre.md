@@ -2,6 +2,11 @@
 title: "Android Safety UX: Introducing Safety Centre"
 date: 2024-09-02T09:14:16+01:00
 draft: false
+tags: 
+  - Android
+  - Android Safety UX
+  - Tech
+
 ---
 
 Welcome to the series of posts on the foundations of safety UX in Android.
