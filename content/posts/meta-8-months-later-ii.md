@@ -1,6 +1,6 @@
 ---
 title: "Joining Meta: 8 Months Later – Part II"
-date: 2025-05-17T15:57:36+01:00
+date: 2025-05-19T06:57:36+01:00
 draft: false
 tags: 
   - Meta
