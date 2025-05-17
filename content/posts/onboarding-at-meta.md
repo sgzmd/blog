@@ -2,6 +2,10 @@
 title: "Onboarding at Meta: ramp-up plan and why it matters"
 date: 2024-11-02T11:48:07Z
 draft: false
+tags: 
+  - Meta
+  - Onboarding at Meta
+  - Tech
 ---
 
 There were tons of comments on my [recent Threads post](https://www.threads.net/@sgzmd/post/DB39MPYtJJ8) related to consuming large amount of documentation during onboarding process, and some comments really resonated with me to the point that I decided to put up a summary here.

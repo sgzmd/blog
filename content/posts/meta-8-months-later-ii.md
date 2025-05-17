@@ -4,6 +4,7 @@ date: 2025-05-17T15:57:36+01:00
 draft: false
 tags: 
   - Meta
+  - Onboarding at Meta
   - Meta 8 Months Later
   - Tech
 ---

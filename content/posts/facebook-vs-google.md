@@ -2,6 +2,10 @@
 title: "Meta vs Google: first take on eng culture"
 date: 2024-10-05T11:04:27+01:00
 draft: false
+tags: 
+  - Meta
+  - Onboarding at Meta
+  - Tech
 ---
 
 Before I joined Meta, I had a few expectations about the engineering culture here. The most notable being:
