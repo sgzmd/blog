@@ -21,7 +21,16 @@ Meta is different. When, upon joining, I was told that it's not a hierarchy, but
 
 After all, it's been years since [Manu Cornet](https://ma.nu/) — Googler back then — published his wonderfully apt infographic you can see above. Well, the joke was on me — this is really how Meta operates. 
 
-At Meta, it is perfectly normal to have something very important done in parallel by several teams, approaching the problem from different points of view. As an example, Integrity or Cross-Meta Security might be approaching something from the protecting-user standpoint, whereas omnipotent Growth will be looking at this very problem from the point of view of retaining existing users, getting them engaged on the platform, and bringing new ones. To be entirely honest with you — and perhaps myself — I am still struggling with this to a certain extent, but as someone very smart once said to me in an internal Workplace post, Meta is a self-rebalancing social graph, and one of the jobs — if not _the_ job — of a senior engineering leader is to find the centre of gravity thereof applicable to a specific problem, and apply their leverage _there_. Bizarre, isn't it?
+At Meta, it is perfectly normal to have something very important done _intentionally_ in parallel by several teams, approaching the problem from different points of view, to ensure that most important stuff gets done, right.
+
+As an example, Integrity or Cross-Meta Security might be approaching something from the protecting-user standpoint, whereas omnipotent Growth will be looking at this very problem from the point of view of retaining existing users, getting them engaged on the platform, and bringing new ones. 
+
+To be entirely honest with you — and perhaps myself — I am still struggling with this to a certain extent, but as someone very smart once said to me in an internal Workplace post: 
+
+> Meta does not operate as hierarchy, it's more like a dynamic and weighted graph. Finding the centres of grvity to influence is part of (if not _the_) job 
+\[for a senior engineering leader\]. 
+
+Bizarre, isn't it? It's bananas for outside, but somehow Meta works, ships products, and - among other things - protects its users and does it _reasonably_ well, so there must be something in this idea after all.
 
 If you made it this far — thank you. Writing this series has been as much about trying to make sense of my own journey as it was about sharing it. A few people pinged me, both internally and externally, after the earlier posts and said they found them helpful — I hope this one is useful too, or at the very least, a little illuminating.
 
