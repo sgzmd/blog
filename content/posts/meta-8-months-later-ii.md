@@ -27,7 +27,7 @@ When I raised the idea of following Google and Apple’s lead by making 2FA mand
 
 That was when I started to understand that saying “it’s the right thing to do” wasn’t going to cut it here — so I backed off and started digging.
 
-The way Meta operates is both similar to and different from Google. In some ways, Meta is more honest internally about the fact that it’s a commercial company that has to make money. User security or integrity doesn’t matter if the company isn’t viable — if we can’t keep the lights on, nothing else really matters. Everything has to serve a goal — including driving user signups. Unlike Google, which can show ads to anyone, Meta monetizes only through registered users.
+The way Meta operates is both similar to and different from Google. In some ways, Meta is more honest internally about the fact that it’s a commercial company that has to make money. User security or integrity doesn’t matter if the company isn’t viable — if we can’t keep the lights on, nothing else really matters. Everything has to serve a goal — including driving user signups. Unlike Google, which can show ads to anyone, Meta monetizes _only through registered users_. Let this idea sit with you for a little while: user who is not logged in, is of zero value to Meta, which is why registration should be as seamless as humanly possible.
 
 Whether it’s the right approach is up for debate — but there’s a brutal honesty to it that I respect. And I can't help but think that being honest with ourselves is essential if we want to do the right job, right.
 
