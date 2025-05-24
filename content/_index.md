@@ -1,7 +1,7 @@
 ## Hi there! 👋
 
 My name is Roman. In my professional life, I'm a [software engineer at Meta](https://www.linkedin.com/in/sgzmd/) - something of a big 
-career choice for me after 14 years at Google, where most recently I've been leading [Android Security and Privacy](https://www.android.com/safety/)
+career change for me after 14 years at Google, where most recently I've been leading [Android Security and Privacy](https://www.android.com/safety/)
 organization in London. My sphere of
 interests is in an interesting overlap between security and user experience -
 after all, the most secure phone is the one turned off, with no SIM card, in a
