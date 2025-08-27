@@ -1,7 +1,7 @@
 ---
 title: "Beelink Mate Mini 80 Gbps"
 date: 2025-08-27T17:09:02+01:00
-draft: true
+draft: false
 ---
 
 I've just received my [Beelink Mate Mini](https://www.bee-link.com/products/beelink-mate-mini-dock) 80 Gbps dock for the Mac Mini M4, and after half an hour of playing with it, I'm really quite impressed. It looks and feels very "native" – it can be positioned  strategically on top of, or right below, your Mac Mini. It closely follows Apple's aesthetic and doesn't look out of place in the slightest.
