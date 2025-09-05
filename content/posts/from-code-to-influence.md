@@ -2,6 +2,9 @@
 title: "From Code to Influence"
 date: 2025-09-03T18:48:02+01:00
 draft: false
+tags:
+ - Tech
+ - Management
 ---
 
 Over and over again, on X/Threads/Reddit I see debates about why software engineers have to sit through "useless meetings" and Zoom calls instead of focusing purely on writing code.  
