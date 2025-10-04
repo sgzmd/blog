@@ -2,6 +2,9 @@
 title: "Reading beyond paper"
 date: 2022-12-21T11:30:11Z
 draft: false
+tags: 
+  - Reading
+  - E-Readers
 ---
 
 I must have mentioned that I am an avid reader, and with the number of books I'm
