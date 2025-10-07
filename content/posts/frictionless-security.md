@@ -1,6 +1,6 @@
 ---
 title: "Frictionless Security - Part I"
-date: 2023-10-07T18:55:23+01:00
+date: 2025-10-07T11:55:23+01:00
 draft: true
 tags:
     - security
