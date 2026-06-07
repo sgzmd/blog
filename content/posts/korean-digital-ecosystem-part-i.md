@@ -35,7 +35,7 @@ Like in many cases, Korea fell the victim of its own success - implementing thin
 
 # Deep Dive into Architecture
 
-This is where it becomes really interesting from the software engineering/security standpoint. 
+This is where it becomes really interesting from the software engineering and security standpoints.
 
 The closed loop system is, in a way, an obvious thing to do because it's the most simple thing to do. It's monolithic, it's symmetric and in many ways, it's just obvious. The same entity acts as an issuer, acquirer, processor and ledger host. This is quite a handful, and when I started reading up about it, it took me a little while to unpack - let me try to explain it using simple words - using open-loop system as the counter-example.
 
