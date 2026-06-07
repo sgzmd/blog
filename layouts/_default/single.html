@@ -3,35 +3,52 @@
   {{ partial "head.html" . }}
 <body>
   <a class="skip-link" href="#main">Skip to main</a>
-  <main id="main">
-  <div class="content">
+  
+  <div class="page-container">
     {{ partial "header.html" . }}
-    <section>
-      <h2 class="post">{{ .Title }}</h2>
-      {{ .Content }}
+    
+    <main id="main" class="main-content">
+      <article class="post-article">
+        <header class="post-header">
+          <h1 class="post-title">{{ .Title }}</h1>
+          {{ if eq .Section "posts" }}
+          <div class="post-meta">
+            <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            {{ $taxonomy := "tags" }}
+            {{ with .Param $taxonomy }}
+              <span class="meta-divider">&middot;</span>
+              <span class="post-tags">
+                {{ range $index, $tag := . }}
+                  {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) }}
+                    <a href="{{ .Permalink }}" class="post-tag">#{{ $tag }}</a>
+                  {{ end }}
+                {{ end }}
+              </span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </header>
+        
+        <div class="post-body">
+          {{ .Content }}
+        </div>
+      </article>
+
       {{ if eq .Section "posts" }}
-      <div class="post-date">
-        <span class="g time">{{.Date.Format "January 2, 2006"}} </span> &#8729;
-        {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
-        {{ range $index, $tag := . }} {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-        <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
-        {{- end -}} {{- end -}}
-        {{ end }}
+      <div id="comments" class="post-comments">
+        {{ partial "comments.html" $ }}
       </div>
       {{ end }}
-    </section>
-    {{ if eq .Section "posts" }}
-    <div id="comments">
-      {{ partial "comments.html" $ }}
-    </div>
-    {{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
   </div>
-</main>
-{{ if .Store.Get "hasMermaid" }}
+
+  {{ if .Store.Get "hasMermaid" }}
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ startOnLoad: true });
   </script>
-{{ end }}
+  {{ end }}
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  {{ partial "head.html" . }}
+<body>
+  <a class="skip-link" href="#main">Skip to main</a>
+  
+  <div class="page-container">
+    {{ partial "header.html" . }}
+    
+    <main id="main" class="main-content">
+      <article class="homepage-article">
+        {{ .Content }}
+      </article>
+      
+      {{ if gt (len (where .Site.RegularPages "Section" "posts")) 0 }}
+      <section class="latest-posts">
+        <h2 class="section-title">Latest Posts</h2>
+        <ul class="posts-list">
+          {{ range (first 5 (where .Site.RegularPages "Section" "posts").ByDate.Reverse) }}
+          <li class="post-item">
+            <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+            <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </section>
+      {{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>
