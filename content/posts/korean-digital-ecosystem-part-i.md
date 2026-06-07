@@ -6,7 +6,7 @@ draft: false
 
 # Introduction: The Road to Seoul
 
-When I initially accepted my offer to Coupang (and consequently made the decision to move to South Korea), I had an interesting mix of expectations and anticipations. There was a lot of excitement, mixed with a healthy amount of dread—after all, this would not be my first across-the-world relocation.
+When I initially accepted my offer to Coupang (and consequently made the decision to move to South Korea), I had an interesting mix of expectations and anticipations. There was a lot of excitement, mixed with a healthy amount of dread - after all, this would not be my first across-the-world relocation.
 
 One of the expectations I had was that I would experience, for real, the Asian hyper-connected digital ecosystem, with Korean hyper-efficiency sprinkled on top. What I have seen, however, has been a bit more nuanced than that.
 
@@ -17,7 +17,7 @@ So, where do I start? There are quite a few stories I can tell. On my Threads ac
 It will definitely take more than one post to describe my experience in Korea. The areas I want to go through are, in no particular order:
 
 - Korean payment systems and their [lack of] integration with global standards.
-- The banking system – where hyper-efficiency falls flat, hard, face-first—aka the "Korean banking Byzantine nightmare".
+- The banking system – where hyper-efficiency falls flat, hard, face-first - aka the "Korean banking Byzantine nightmare".
 - Maps, navigation, and global services – or, *WHY NO GOOGLE?*
 - Surviving without English – and why Android &gt;&gt; iPhone every single time (sneak peek: because of built-in translation).
 - Real-name verification for every sneeze – aka the "Korean Privacy Nightmare".
