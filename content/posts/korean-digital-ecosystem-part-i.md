@@ -1,7 +1,7 @@
 ---
 title: "Tap and (don't) Go - Korean Digital Ecosystem"
-date: 2026-06-07T18:49:56+09:00
-draft: true
+date: 2026-06-07T10:49:56+01:00
+draft: false
 ---
 
 # Introduction: The Road to Seoul
