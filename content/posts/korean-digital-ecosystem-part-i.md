@@ -42,7 +42,7 @@ The closed loop system is, in a way, an obvious thing to do because it's the mos
 In such a system, a single tap when you are paying for your sandwich-and-coffee in Pret (or indeed your morning portion of ~~misery and suffering~~ Tube journey), involves a complex dance between multiple distinct, federated entities, specifically:
 
 - The issuer - aka the bank that gave you the card (think HSBC or Citibank or Barclays)
-- The acquirer - the bank processing the merchant transaction (could be one of those above, or literally anything else - it's an open system, remember? - or a specialised processor such as Worldpay)
+- The acquirer - the bank processing the merchant transaction (could be one of those above, or literally anything else - it's an open system, remember? - or a specialised processor, such as Worldpay)
 - The processor (Visa, Mastercard, Amex) - the technical switch actually routing the data
 - The ledger host - the entity which actually keeps the tab of all the transactions, and moves money from pocket A to pocket B.
 
