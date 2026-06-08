@@ -2,6 +2,9 @@
 title: "Tap and (don't) Go - Korean Digital Ecosystem"
 date: 2026-06-07T10:49:56+01:00
 draft: false
+tags: 
+  - Tech
+  - Korea
 ---
 
 # Introduction: The Road to Seoul
