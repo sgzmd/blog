@@ -13,7 +13,7 @@ When I initially accepted my offer to Coupang (and consequently made the decisio
 
 One of the expectations I had was that I would experience, for real, the Asian hyper-connected digital ecosystem, with Korean hyper-efficiency sprinkled on top. What I have seen, however, has been a bit more nuanced than that.
 
-So, where do I start? There are quite a few stories I can tell. On my Threads account (I am ex-Meta, remember?) aptly named [@gmt_plus9](https://www.threads.com/@gmt_plus9), I have been ~~sulking~~ describing my experiences since I boarded my LHR to ICN flight. Today, I figured that maybe I want to elaborate a little bit on those experiences, with a few more words than the microblogging format allows.
+So, where do I start? There are quite a few stories I can tell. On my Threads account (I am ex-Meta, remember?) aptly named [gmt_plus9](https://www.threads.com/@gmt_plus9), I have been ~~sulking~~ describing my experiences since I boarded my LHR to ICN flight. Today, I figured that maybe I want to elaborate a little bit on those experiences, with a few more words than the microblogging format allows.
 
 # The Hit List
 
