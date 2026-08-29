@@ -130,6 +130,8 @@ The first requirement survives changes in operating systems, browser isolation, 
 
 And you, the customer has to install it.
 
+![Archicture of regulation](/static/korea/architecture-of-regulation.webp)
+
 A small industry appears whose continued existence depends on this entire arrangement continuing to exist. And even if the regulation eventually changes, all of those other things do not magically evaporate at midnight.
 
 Korean digital certificates are perhaps another canonical example.
