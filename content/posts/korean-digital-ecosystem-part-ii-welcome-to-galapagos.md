@@ -150,12 +150,12 @@ ActiveX turned out to be extremely convenient for both.
 
 Then additional security mechanisms accumulated around the transaction:
 
-- certificate managers;
-- encryption software;
-- anti-keylogging software;
-- personal firewalls;
-- anti-malware components;
-- transaction-protection software.
+- certificate managers
+- encryption software
+- anti-keylogging software
+- personal firewalls
+- anti-malware components
+- transaction-protection software
 
 This architecture worked. And because it worked, it spread (and consequently was codified in regulations - see above for why). Which brings us neatly to my attempt to use Korean Internet banking in 2026.
 
