@@ -189,13 +189,12 @@ A website cannot just decide:
 
 > Hmm, I wonder which other processes Roman has running?
 
-It cannot normally hook the system keyboard.
+Most notably:
 
-It cannot casually inspect arbitrary machine configuration.
-
-It cannot install a root certificate authority.
-
-It cannot execute privileged native code simply because I opened a banking tab.
+* It cannot normally hook the system keyboard.
+* It cannot casually inspect arbitrary machine configuration.
+* It cannot install a root certificate authority.
+* It cannot execute privileged native code simply because I opened a banking tab.
 
 These are features, not bugs. The browser is a giant security boundary separating an untrusted Internet from my endpoint - which, in my opinion, is the cornerstone of people having any modicum of (perhaps, often misplaced) trust in their online experience safety.
 
