@@ -11,6 +11,8 @@ In the [previous post](/posts/korean-digital-ecosystem-part-i/), I promised that
 
 Instead of just writing down all the weird, wonderful, and wonderfully weird things that happened while I was trying to get a Korean bank account and move money around, I started researching **why** Korean banking works this way. 
 
+![Galapagos Iguana](/static/korea/iguana.jpg)
+
 This turned out to be a rabbit hole. Then the rabbit hole turned out to have its own metro system, several government agencies, a certificate authority and, for reasons we will get to shortly, a Windows kernel driver.
 
 As it stands, the banking story connects _also_ directly to Korean online identity. Which connects to the Resident Registration Number. Which connects to mobile phone authentication. Which connects to how Korean privacy regulation evolved. Which connects to ActiveX and Internet Explorer. Which connects to a particularly Korean approach to security regulation. Which connects to why Korean corporate computers are full of software that I will later argue deserves to be called mandatory spyware.
