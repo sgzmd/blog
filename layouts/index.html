@@ -12,11 +12,12 @@
         {{ .Content }}
       </article>
       
-      {{ if gt (len (where .Site.RegularPages "Section" "posts")) 0 }}
+      {{ $posts := where .Site.RegularPages "Section" "posts" }}
+      {{ if gt (len $posts) 0 }}
       <section class="latest-posts">
         <h2 class="section-title">Latest Posts</h2>
         <ul class="posts-list">
-          {{ range (first 5 (where .Site.RegularPages "Section" "posts").ByDate.Reverse) }}
+          {{ range (first 5 ($posts.ByDate.Reverse)) }}
           <li class="post-item">
             <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
             {{ $post := . }}

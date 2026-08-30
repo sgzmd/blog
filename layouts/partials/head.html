@@ -24,7 +24,6 @@
     <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/schema.html" . }}
-    {{ template "_internal/google_analytics.html" . }}
     <link rel="canonical" href="{{ .Permalink }}">
     <link rel="icon" href="{{ .Site.BaseURL }}/assets/favicon.ico">
 
@@ -109,12 +108,12 @@
     </script>
     {{- end -}}
 
-    <!-- Fetch Favicons for External Links -->
-    <script>
+    <!-- Fetch Favicons for External Links (deferred) -->
+    <script defer>
       document.addEventListener("DOMContentLoaded", () => {
         const links = document.querySelectorAll(".post-body a, .homepage-article a");
         const currentHost = window.location.hostname;
-        
+
         links.forEach(link => {
           try {
             const url = new URL(link.href);
@@ -122,13 +121,13 @@
               if (link.querySelector('img') || link.querySelector('svg') || link.classList.contains('post-tag')) {
                 return;
               }
-              
+
               const favicon = document.createElement("img");
               favicon.src = `https://www.google.com/s2/favicons?sz=32&domain=${url.hostname}`;
               favicon.className = "external-link-favicon";
               favicon.alt = "";
               favicon.loading = "lazy";
-              
+
               link.prepend(favicon);
               link.classList.add("external-link");
             }
