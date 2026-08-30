@@ -57,13 +57,6 @@ finishing a change to confirm that the full site builds successfully.
   over raw HTML unless a component genuinely requires HTML.
 - Use `**bold**` for normal emphasis and `_italics_` for titles, asides, or a
   change of voice. Do not use bold as a substitute for headings.
-- Use descriptive link text instead of pasted URLs or vague wording such as
-  "click here".
-- Write descriptive image alt text. A normal image uses
-  `![Description](/static/path/image.jpg)`.
-- Keep the author's conversational voice. The site locale is British English, so
-  prefer spellings such as "organisation" and "instalment" unless quoting a
-  source or using an established proper name.
 - Avoid manual line breaks for visual layout. The theme controls wrapping and
   spacing responsively.
 
