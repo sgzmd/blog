@@ -1,13 +1,14 @@
 ---
-title: "Welcome to the Galápagos - Korean Digital Ecosystem, Part II"
+title: "The Invisible Korean Operating System"
+series: "Korean Digital Ecosystem"
+part: "Part II.2"
+subtitle: "How Korea's national identity infrastructure connects everyday life—and exposes every assumption about who belongs."
 date: 2026-08-30T06:24:00+08:00
 draft: true
 tags: 
   - Tech
   - Korea
 ---
-
-# The Invisible Korean Operating System — Korean Digital Ecosystem, Part II.2
 
 At the end of the previous instalment I called foreigners an **integration test** for the Korean digital ecosystem. I wasn't entirely joking.
 
@@ -19,13 +20,27 @@ What *is* particularly Korean though is just how much of the country's digital e
 
 To understand what happens when it doesn't, however, we need to go back considerably further than the Internet.
 
-# Everyone Gets A Number
+## Everyone Gets A Number
 
 Korea had already operated a resident-registration system since the early 1960s, but after the January 21, 1968 Blue House raid — when a group of North Korean commandos infiltrated Seoul in an attempt to assassinate President Park Chung-hee — the government [strengthened it into the modern national identification system](https://theme.archives.go.kr/next/koreaOfRecord/identityCard.do). The new system included identity cards and a unique Resident Registration Number intended to make it substantially easier to distinguish legitimate residents from infiltrators.
+
+{{< captioned-image
+  src="/static/korea/blue-house-raid-1968.jpg"
+  alt="Kim Shin-jo being escorted after the unsuccessful Blue House raid in January 1968"
+>}}
+Kim Shin-jo, the sole surviving member of the North Korean commando unit, being escorted after the unsuccessful Blue House raid, January 1968. [Source: Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Blue_House_raid.jpg), Korea Open Government Licence Type 1.
+{{< /captioned-image >}}
 
 So we already have a pattern which should be familiar from the previous instalment: something gets introduced in response to an entirely real security problem, works well enough, and eventually becomes infrastructure.
 
 The Resident Registration Number — usually abbreviated **RRN** — was exceptionally useful infrastructure.
+
+{{< captioned-image
+  src="/static/korea/resident-registration-card-1983.jpg"
+  alt="A Korean resident-registration card of the design used from 1983 to 2000"
+>}}
+A Korean resident-registration card of the design used from 1983 to 2000. [Source: eMuseum via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%EC%A3%BC%EB%AF%BC%EB%93%B1%EB%A1%9D%EC%A6%9D_PS0100101100200134500000_0.jpg), Korea Open Government Licence Type 1.
+{{< /captioned-image >}}
 
 A unique identifier solves a boring but surprisingly difficult problem: how do you know that the person standing in Bank A is the same person whose tax record sits in Government Database B and whose telephone subscription is being created by Telecom Operator C? Names are terrible identifiers — they are duplicated, transliterated, changed, misspelt and generally behave nothing like database engineers would like names to behave (besides, [20% of the country proudly shares the last name of Kim, and another 15% are Lee](https://www.koreatimes.co.kr/southkorea/20160917/kim-lee-park-remain-three-most-common-surnames?utm_source=chatgpt.com) - this almost certainly has something to do with it). A permanent unique number is indeed much easier.
 
@@ -45,7 +60,7 @@ And Korea had some *very* large personal-data leaks. Ahem. More on those later.
 
 For now, what matters is that Korea had created something quite powerful: a near-universal identity key which existed long before mass-market online services arrived. Once those services did arrive, building on top of it was the obvious thing to do.
 
-# The Internet Would Like To See Your Papers
+## The Internet Would Like To See Your Papers
 
 Korea then went one step further.
 
@@ -73,7 +88,7 @@ So Korea did not get rid of online identity verification. It got rid of the idea
 
 Which is quite a different thing.
 
-# We Got Rid of the Resident Number. Mostly.
+## We Got Rid of the Resident Number. Mostly.
 
 The modern Korean system is, from a security-engineering perspective, considerably more interesting than simply typing an RRN into a website.
 
@@ -88,6 +103,13 @@ This is hardly unique to Korea. Federated identity is a perfectly normal idea.
 What makes the Korean version particularly interesting is who some of the most important identity providers turned out to be: mobile phone operators.
 
 If you've spent any amount of time dealing with Korean websites, you have almost certainly seen the standard phone-verification flow: enter your name, date of birth, mobile operator and number, perhaps specify whether you are a Korean or foreign national, and then approve the request through SMS or the PASS app.
+
+{{< captioned-image
+  src="/static/korea/pass-verification-flow.jpg"
+  alt="The four-stage PASS mobile identity-verification flow"
+>}}
+The four-stage PASS mobile identity-verification flow. [Source: Korea Internet & Security Agency](https://identity.kisa.or.kr/web/main/contents/M030-02).
+{{< /captioned-image >}}
 
 On the surface, this looks very similar to SMS authentication anywhere else.
 
@@ -115,7 +137,7 @@ The distinction sounds academic until you encounter someone who has an entirely 
 
 We will get to that. First, however, we need to introduce one more piece of the plumbing.
 
-# Meet CI, The Number You Didn't Know You Had
+## Meet CI, The Number You Didn't Know You Had
 
 Removing RRNs from individual websites creates another problem.
 
@@ -147,7 +169,7 @@ Which is normally the sign of good infrastructure.
 
 Until you don't fit the model.
 
-# And Then A Foreigner Walks Into The API
+## And Then A Foreigner Walks Into The API
 
 This is where foreigners become useful.
 
@@ -180,6 +202,13 @@ That is a much more interesting problem.
 And, importantly, Korea has been changing this too.
 
 In **January 2025**, the Ministry of Justice [began issuing mobile residence cards to registered foreign residents](https://www.immigration.go.kr/bbs/immigration/220/591020/artclView.do), giving the mobile credential the same legal validity as the physical residence card and explicitly presenting it as part of an effort to reduce the digital gap experienced by foreigners.
+
+{{< captioned-image
+  src="/static/korea/mobile-foreigner-residence-card.png"
+  alt="Ministry of Justice announcement of the mobile foreign-residence card"
+>}}
+The Ministry of Justice announces the mobile foreign-residence card. The highlighted requirements include installing the app on a smartphone registered in the applicant's own name. [Source: Ministry of Justice](https://www.immigration.go.kr/bbs/immigration/220/591020/artclView.do).
+{{< /captioned-image >}}
 
 This is exactly the sort of direction you would hope the system would move in: a proper government-backed digital credential, rather than every private service inventing yet another way of proving that the person holding a foreign residence card is, in fact, the person named on the foreign residence card.
 

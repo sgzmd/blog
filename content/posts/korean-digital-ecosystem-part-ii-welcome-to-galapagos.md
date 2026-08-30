@@ -1,5 +1,8 @@
 ---
-title: "Welcome to the Galápagos - Korean Digital Ecosystem, Part II"
+title: "Welcome to the Galápagos"
+series: "Korean Digital Ecosystem"
+part: "Part II"
+subtitle: "How early digital success and prescriptive regulation built a web ecosystem unlike anywhere else."
 date: 2026-08-29T17:24:00+08:00
 draft: false
 tags: 
@@ -11,7 +14,12 @@ In the [previous post](/posts/korean-digital-ecosystem-part-i/), I promised that
 
 Instead of just writing down all the weird, wonderful, and wonderfully weird things that happened while I was trying to get a Korean bank account and move money around, I started researching **why** Korean banking works this way. 
 
-![Galapagos Iguana](/static/korea/iguana.jpg)
+{{< captioned-image
+  src="/static/korea/iguana.jpg"
+  alt="A marine iguana in the Galápagos"
+>}}
+A marine iguana in the Galápagos.
+{{< /captioned-image >}}
 
 This turned out to be a rabbit hole. Then the rabbit hole turned out to have its own metro system, several government agencies, a certificate authority and, for reasons we will get to shortly, a Windows kernel driver.
 
@@ -35,7 +43,7 @@ Roughly 2,500–3,500 words each feels about right. Famous last words.
 
 Before we get to banks, however, we need to answer a more fundamental question.
 
-# Wait, Isn't Korea Supposed to Be Really Good at Technology?
+## Wait, Isn't Korea Supposed to Be Really Good at Technology?
 
 Why, yes, of course, it is - and it's actually _one of the best_ in more aspects than one. This is the first thing that makes the whole story interesting.
 
@@ -51,15 +59,23 @@ The [Korean government](https://www.mois.go.kr/eng/sub/a03/digitalGovernmentHist
 
 Then broadband happened - and in February 2001, Korea passed 10 broadband subscriptions per 100 inhabitants. That doesn't sound terribly exciting today, until you realise that it was more than [twice the penetration of the next-best OECD country](https://www.oecd.org/en/publications/the-development-of-broadband-access-in-the-oecd-countries_233822327671.html) at the time (which just happens to be Canada - no surprise I always liked it so much!) By the middle of the year Korea was at 13.9 broadband subscriptions per 100 inhabitants, and the OECD essentially wrote that everyone else should expect to be measured against Korea for the next few years. Later revisions of the OECD data put Korea above 20 fixed-broadband subscriptions per 100 people during 2001, still dramatically ahead of almost everyone else. 
 
+{{< captioned-image
+  src="/static/korea/pc-bang-2001.jpg"
+  alt="A PC bang in Seoul in July 2001"
+>}}
+A PC bang in Seoul, July 2001. Photograph by Alex C. [Source: Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PC_bang_in_2001.jpg), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).
+{{< /captioned-image >}}
+
 In other words, Korea did not spend the late 1990s desperately trying to catch up with the Internet. As a matter of fact, _Korea got there first._
 
 And I think this is the most important bit to understand about the whole Korean [digital Galapagos](https://vivaexpeditions.com/blog/the-weirdest-wildlife-on-the-galapagos-islands). A surprisingly large number of things which look ridiculous in 2026 were not ridiculous when they were introduced.
 
-**They were solutions. Often pretty good solutions.**
+{{< mark >}}They were solutions - often pretty good solutions.{{< /mark >}}
+
 
 The problem is that a solution has a lifecycle, while infrastructure has a half-life somewhere around enriched uranium.
 
-# The Early-Adopter Trap, Again
+## The Early-Adopter Trap, Again
 
 If you remember the previous post, this was essentially [my explanation for T-money](https://blog.kirillov.cc/posts/korean-digital-ecosystem-part-i/).
 
@@ -81,7 +97,7 @@ The government did not merely encourage digitalisation.
 
 Historically, Korean regulators were quite willing to tell companies exactly _how to implement it_. And as a security engineer, this is where I start developing a nervous twitch.
 
-# Thou Shalt Be Secure - Specifically Like This
+## Thou Shalt Be Secure - Specifically Like This
 
 There are broadly two ways to regulate technology. The first is to specify the outcome.
 
@@ -101,15 +117,18 @@ Korea has historically had a lot more of the latter.
 
 One modern example is ISMS-P — the Information Security and Personal Information Management System certification framework operated under Korea's security/privacy regime.
 
-_(now, a clarification before someone sends me a 47-message LinkedIn essay: GDPR and ISMS-P aren't equivalent things. GDPR is legislation governing personal-data processing; ISMS-P is a security and privacy management-system certification framework. ISMS-P also absolutely contains risk-management requirements — it isn't just a pile of random configuration settings)_
+{{% sidenote %}}
+Now, a clarification before someone sends me a 47-message LinkedIn essay: GDPR and ISMS-P aren't equivalent things. GDPR is legislation governing personal-data processing; ISMS-P is a security and privacy management-system certification framework. ISMS-P also absolutely contains risk-management requirements — it isn't just a pile of random configuration settings
+{{% /sidenote %}}
 
 The difference in philosophy becomes obvious once you get into the implementation guidance. The official 2023 ISMS-P guide, for example, still lists hiding the SSID and MAC-address authentication among top-notch must-have wireless-network security measures — controls that [modern platform guidance explicitly treats as ineffective or even counterproductive](https://support.apple.com/en-us/102766).
 
 It is a tiny example, but a revealing one: once a control becomes something an auditor can tick, its relationship with actual security can become surprisingly optional. 
 
-**Prescriptive security regulation has an expiry date. Compliance infrastructure does not.**
+{{< mark >}}
+Prescriptive regulations have an expiry date. Compliance infrastructure doesn't.{{< /mark >}}
 
-# When Regulation Becomes Architecture
+## When Regulation Becomes Architecture
 
 Let's imagine that instead of saying:
 
@@ -132,13 +151,22 @@ The first requirement survives changes in operating systems, browser isolation, 
 
 And you, the customer has to install it.
 
-![Archicture of regulation](/static/korea/architecture-of-regulation.webp)
+{{< annotated-image
+  src="/static/korea/architecture-of-regulation.webp"
+  alt="Diagram showing how regulation becomes architecture and persists after the original rule is removed"
+  caption="When regulation becomes architecture."
+  pins="18,28;50,51;82,72"
+>}}
+1. **The mandate** turns a desired security outcome into a prescribed implementation.
+2. **The ecosystem** grows around certification, procurement, integration, and audits.
+3. **The residue** remains after the original regulation and technology have moved on.
+{{< /annotated-image >}}
 
 A small industry appears whose continued existence depends on this entire arrangement continuing to exist. And even if the regulation eventually changes, all of those other things do not magically evaporate at midnight.
 
 Korean digital certificates are perhaps another canonical example.
 
-## A Perfectly Sensible Certificate, Followed by Everything Else
+### A Perfectly Sensible Certificate, Followed by Everything Else
 
 Korea enacted its Digital Signature Act in 1999 (way, way before the rest of the world), introducing what became known as the authorised — later usually translated as *accredited* — certificate system. In 2002, use of these certificates became mandatory for electronic financial transactions. The stated purpose was perfectly sensible: improve the stability and reliability of electronic commerce. So far so good.
 
@@ -150,7 +178,9 @@ One of them actually predates the certificate system itself. In the late 1990s, 
 
 ActiveX turned out to be extremely convenient for both.
 
-*(If the mere mention of ActiveX made you shudder, congratulations: your security instincts are functioning normally. For everyone lucky enough not to remember it, ActiveX was Microsoft's mechanism for letting websites run native Windows components with privileges far beyond what we would now consider remotely sane for web content. Which, naturally, made it extremely useful for exactly this sort of thing. But I digress.)*
+{{% sidenote title="ActiveX" %}}
+If the mere mention of ActiveX made you shudder, congratulations: your security instincts are functioning normally. For everyone lucky enough not to remember it, ActiveX was Microsoft's mechanism for letting websites run native Windows components with privileges far beyond what we would now consider remotely sane for web content. Which, naturally, made it extremely useful for exactly this sort of thing. But I digress.
+{{% /sidenote %}}
 
 Then additional security mechanisms accumulated around the transaction:
 
@@ -163,7 +193,7 @@ Then additional security mechanisms accumulated around the transaction:
 
 This architecture worked. And because it worked, it spread (and consequently was codified in regulations - see above for why). Which brings us neatly to my attempt to use Korean Internet banking in 2026.
 
-# Please Install Our Mandatory Spyware
+## Please Install Our Mandatory Spyware
 
 Here is a sentence that, after quite a lot of research, I am comfortable writing:
 
@@ -180,6 +210,13 @@ You can call it "endpoint protection" if you like, but personally I'm going with
 A [rather entertaining paper presented at USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25/presentation/yun) analysed the modern generation of what the researchers call Korea Security Applications, or KSA 2.0. These are the descendants of the old ActiveX security components — now usually native applications installed separately on the computer.
 
 Depending on the particular product, these applications perform functions including secure keyboard input, antivirus scanning and transaction protection.
+
+{{< captioned-image
+  src="/static/korea/woori-security-programs.jpg"
+  alt="Woori Bank security-program installation page listing several required components"
+>}}
+Woori Bank's integrated security-program installation page lists separate components for installation management, certificate signing, a personal firewall and antivirus, keyboard protection, and security logging. [Source: Woori Bank](https://spot.wooribank.com/pot/Dream?VP=install&withyou=CQSCT0089), captured August 2026.
+{{< /captioned-image >}}
 
 The interesting part, as always, is *how*.
 
@@ -228,7 +265,7 @@ This is one of those statistics which makes perfect sense once you've used enoug
 
 Now something called `TouchEn nxKey` lives on your machine. You have absolutely no recollection of installing it. Presumably it is protecting something.
 
-## But Is It Actually Mandatory?
+### But Is It Actually Mandatory?
 
 Here things get interesting again.
 

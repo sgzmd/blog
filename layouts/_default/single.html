@@ -9,10 +9,21 @@
     
     <main id="main" class="main-content">
       <article class="post-article">
-        <header class="post-header">
-          <h1 class="post-title">{{ .Title }}</h1>
+        {{ $hasEditorialHeader := or .Params.series .Params.part .Params.subtitle }}
+        <header class="post-header{{ if $hasEditorialHeader }} post-header--editorial{{ end }}">
+          {{ if or .Params.series .Params.part }}
+          <div class="post-series">
+            {{ with .Params.series }}<span>{{ . }}</span>{{ end }}
+            {{ if and .Params.series .Params.part }}<span class="series-divider" aria-hidden="true"></span>{{ end }}
+            {{ with .Params.part }}<span>{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+          <h1 class="post-title{{ if $hasEditorialHeader }} post-title--editorial{{ end }}">{{ .Title }}</h1>
+          {{ with .Params.subtitle }}
+          <p class="post-subtitle">{{ . }}</p>
+          {{ end }}
           {{ if eq .Section "posts" }}
-          <div class="post-meta">
+          <div class="post-meta{{ if $hasEditorialHeader }} post-meta--separated{{ end }}">
             <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
             {{ $taxonomy := "tags" }}
             {{ with .Param $taxonomy }}

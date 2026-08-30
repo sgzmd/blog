@@ -1,0 +1,10 @@
+{{- $title := .Get "title" | default "Side note" -}}
+{{- $note := .Inner | strings.TrimSpace -}}
+
+<aside class="sidenote" aria-label="{{ $title }}">
+  <span class="sidenote-label">{{ $title }}</span>
+  <div class="sidenote-content">
+    {{- .Page.RenderString (dict "display" "block") $note -}}
+  </div>
+</aside>
+

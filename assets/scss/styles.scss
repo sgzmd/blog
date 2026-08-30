@@ -223,6 +223,30 @@ a:hover {
   margin-bottom: 2.5rem;
 }
 
+.post-header--editorial {
+  margin-bottom: 3rem;
+}
+
+.post-series {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.9rem;
+  color: var(--color-accent);
+  font-family: var(--font-ui);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.series-divider {
+  width: 1.5rem;
+  height: 1px;
+  background: var(--color-border);
+}
+
 .post-title {
   font-size: clamp(2.25rem, #{"1.75rem + 3vw"}, 3rem);
   font-weight: 800; /* Bold accent for the main article title */
@@ -232,6 +256,24 @@ a:hover {
   margin-bottom: 0.75rem;
 }
 
+.post-title--editorial {
+  max-width: 13ch;
+  margin-bottom: 0.8rem;
+  font-size: clamp(2.5rem, #{"2rem + 3vw"}, 3.65rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.post-subtitle {
+  max-width: 50ch;
+  margin: 0 0 1.25rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, #{"0.98rem + 0.45vw"}, 1.3rem);
+  font-style: italic;
+  line-height: 1.55;
+}
+
 .post-meta {
   display: flex;
   align-items: center;
@@ -239,6 +281,11 @@ a:hover {
   font-family: var(--font-ui);
   font-size: 0.9rem;
   color: var(--color-text-muted);
+}
+
+.post-meta--separated {
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
 }
 
 .meta-divider {
@@ -335,9 +382,32 @@ blockquote p:last-child {
   text-decoration: none;
 }
 
+.post-link {
+  display: block;
+  min-width: 0;
+}
+
+.post-link-title {
+  display: block;
+}
+
+.post-list-series {
+  display: block;
+  margin-top: 0.18rem;
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  line-height: 1.4;
+}
+
 .post-link:hover, .archive-link:hover {
   color: var(--color-accent);
   text-decoration: none;
+}
+
+.post-link:hover .post-list-series {
+  color: var(--color-accent);
 }
 
 /* Code Blocks & Inline Code */
@@ -420,6 +490,244 @@ img {
   border-radius: 6px;
   margin: 1.5rem auto;
   display: block;
+}
+
+/* Standard editorial images with Markdown-capable captions */
+.captioned-figure {
+  margin: 2rem 0 2.5rem;
+}
+
+.captioned-figure img {
+  width: 100%;
+  margin: 0;
+}
+
+.captioned-figure figcaption {
+  padding: 0.75rem 0.15rem 0;
+  color: var(--color-text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.captioned-figure figcaption > :first-child {
+  margin-top: 0;
+}
+
+.captioned-figure figcaption > :last-child {
+  margin-bottom: 0;
+}
+
+/* Editorial figures with numbered image annotations */
+.annotated-figure {
+  position: relative;
+  left: 50%;
+  width: 980px;
+  max-width: calc(100vw - 2.5rem);
+  margin: 2rem 0 2.5rem;
+  transform: translateX(-50%);
+}
+
+.annotation-canvas {
+  position: relative;
+  padding: clamp(0.35rem, 1.2vw, 0.75rem);
+  border: 1px solid var(--color-border);
+  background: var(--color-code-bg);
+  border-radius: 8px;
+}
+
+.annotation-canvas img {
+  width: 100%;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.annotation-pin,
+.annotation-list li::before {
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  font: 700 0.78rem/1 var(--font-ui);
+}
+
+.annotation-pin {
+  position: absolute;
+  width: 1.75rem;
+  height: 1.75rem;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 4px var(--color-bg);
+}
+
+.annotated-figure figcaption {
+  display: flex;
+  gap: 0.65rem;
+  padding: 0.8rem 0.15rem 0.95rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.figure-label,
+.sidenote-label {
+  color: var(--color-accent);
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.annotation-list > ol {
+  counter-reset: image-annotation;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0 !important;
+  padding: 1rem 0 0 !important;
+}
+
+.annotation-list > ol > li {
+  counter-increment: image-annotation;
+  position: relative;
+  display: block;
+  margin: 0 !important;
+  padding-left: 2.15rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  line-height: 1.5 !important;
+}
+
+.annotation-list > ol > li::before {
+  content: counter(image-annotation);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.68rem;
+}
+
+.annotation-list strong {
+  color: var(--color-text);
+}
+
+/* Margin notes on wide screens; inset notes where the margin is too narrow */
+.sidenote {
+  float: right;
+  clear: right;
+  width: 15rem;
+  margin: 0.25rem -17.5rem 1.25rem 2.5rem;
+  padding-top: 0.7rem;
+  border-top: 2px solid var(--color-accent);
+  color: var(--color-text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.sidenote-content > :first-child {
+  margin-top: 0.45rem;
+}
+
+.sidenote-content > :last-child {
+  margin-bottom: 0;
+}
+
+/* Phrase-level emphasis; standalone marks become key-statement blocks */
+.editorial-mark {
+  border-bottom: 2px solid var(--color-accent);
+  background: none;
+  color: inherit;
+  font-weight: 650;
+  padding: 0 0 0.1em;
+  text-decoration: none;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.post-body > .editorial-mark {
+  display: block;
+  margin: 1.75rem 0 2rem;
+  padding: 0.1rem 0 0.1rem 1rem;
+  border: 0;
+  border-left: 3px solid var(--color-accent);
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 1350px) {
+  .sidenote {
+    float: none;
+    width: auto;
+    margin: 0.5rem 0 1.75rem;
+    padding: 0.8rem 1rem 0.9rem;
+    border-top: 0;
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 4px 4px 0;
+    background: var(--color-blockquote-bg);
+  }
+}
+
+@media (max-width: 720px) {
+  .annotated-figure {
+    left: auto;
+    width: 100%;
+    transform: none;
+  }
+
+  .annotation-pin {
+    width: 1.45rem;
+    height: 1.45rem;
+    font-size: 0.68rem;
+    box-shadow: 0 0 0 3px var(--color-bg);
+  }
+
+  .annotated-figure figcaption {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .annotation-list > ol {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .post-series {
+    flex-wrap: wrap;
+    gap: 0.4rem 0.55rem;
+  }
+
+  .series-divider {
+    width: 1rem;
+  }
+
+  .post-title--editorial {
+    max-width: none;
+  }
+
+  .post-meta--separated {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .post-item {
+    align-items: flex-start;
+  }
+
+  .post-item .post-date {
+    flex-basis: 105px;
+    padding-top: 0.1rem;
+    font-size: 0.82rem;
+  }
 }
 
 .external-link-favicon {

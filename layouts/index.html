@@ -19,7 +19,15 @@
           {{ range (first 5 (where .Site.RegularPages "Section" "posts").ByDate.Reverse) }}
           <li class="post-item">
             <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-            <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ $post := . }}
+            <a class="post-link" href="{{ .Permalink }}">
+              <span class="post-link-title">{{ .Title }}</span>
+              {{ with .Params.series }}
+              <span class="post-list-series">
+                {{ . }}{{ with $post.Params.part }} <span aria-hidden="true">&middot;</span> {{ . }}{{ end }}
+              </span>
+              {{ end }}
+            </a>
           </li>
           {{ end }}
         </ul>

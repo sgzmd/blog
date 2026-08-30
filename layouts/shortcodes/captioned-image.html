@@ -1,0 +1,14 @@
+{{- $src := .Get "src" -}}
+{{- if not $src -}}
+  {{- errorf "The captioned-image shortcode requires a src parameter (%s)" .Position -}}
+{{- end -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Inner | strings.TrimSpace -}}
+
+<figure class="captioned-figure">
+  <img src="{{ $src | safeURL }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+  {{- with $caption }}
+  <figcaption>{{ $.Page.RenderString (dict "display" "block") . }}</figcaption>
+  {{- end }}
+</figure>
+

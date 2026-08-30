@@ -1,5 +1,7 @@
 ---
-title: "Tap and (don't) Go - Korean Digital Ecosystem"
+title: "Tap and (don't) Go"
+series: "Korean Digital Ecosystem"
+part: "Part I"
 date: 2026-06-07T10:49:56+01:00
 draft: false
 tags: 

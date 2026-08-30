@@ -12,7 +12,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ .Site.Params.author | default .Site.Title }}">
-    <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    {{ $documentTitle := .Title }}
+    {{ with .Params.series }}
+      {{ $seriesLabel := . }}
+      {{ with $.Params.part }}{{ $seriesLabel = printf "%s, %s" $seriesLabel . }}{{ end }}
+      {{ $documentTitle = printf "%s — %s" $.Title $seriesLabel }}
+    {{ else }}
+      {{ with .Params.part }}{{ $documentTitle = printf "%s — %s" $.Title . }}{{ end }}
+    {{ end }}
+    <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ $documentTitle }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/schema.html" . }}
@@ -54,9 +62,9 @@
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "articleSection": "{{ .Section }}",
-        "name": "{{ .Title | safeJS }}",
-        "headline": "{{ .Title | safeJS }}",
-        "alternativeHeadline": "{{ .Params.lead }}",
+        "name": "{{ $documentTitle | safeJS }}",
+        "headline": "{{ $documentTitle | safeJS }}",
+        "alternativeHeadline": "{{ .Params.subtitle | default .Params.lead }}",
         "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ end }}{{ end }}",
         "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
         "isFamilyFriendly": "true",

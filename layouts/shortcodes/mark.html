@@ -1,0 +1,2 @@
+{{- $text := .Inner | strings.TrimSpace -}}
+<mark class="editorial-mark">{{ .Page.RenderString (dict "display" "inline") $text }}</mark>

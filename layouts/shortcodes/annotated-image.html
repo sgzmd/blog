@@ -1,0 +1,40 @@
+{{- $src := .Get "src" -}}
+{{- if not $src -}}
+  {{- errorf "The annotated-image shortcode requires a src parameter (%s)" .Position -}}
+{{- end -}}
+{{- $alt := .Get "alt" | default (.Get "caption") | default "" -}}
+{{- $caption := .Get "caption" | default "" -}}
+{{- $pins := .Get "pins" | default "" -}}
+{{- $figureNumber := add (.Page.Scratch.Get "annotatedFigureCount" | default 0) 1 -}}
+{{- .Page.Scratch.Set "annotatedFigureCount" $figureNumber -}}
+{{- $notes := .Inner | strings.TrimSpace -}}
+
+<figure class="annotated-figure">
+  <div class="annotation-canvas">
+    <img src="{{ $src | safeURL }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+    {{- with $pins }}
+      {{- range $index, $pin := split . ";" }}
+        {{- $coordinates := split $pin "," -}}
+        {{- if eq (len $coordinates) 2 -}}
+          {{- $x := trim (index $coordinates 0) " " -}}
+          {{- $y := trim (index $coordinates 1) " " -}}
+          <span class="annotation-pin" style="{{ printf "left:%s%%;top:%s%%;" $x $y | safeCSS }}" aria-hidden="true">{{ add $index 1 }}</span>
+        {{- else -}}
+          {{- warnf "Ignoring malformed annotated-image pin %q (%s)" $pin $.Position -}}
+        {{- end -}}
+      {{- end }}
+    {{- end }}
+  </div>
+  {{- with $caption }}
+  <figcaption>
+    <span class="figure-label">Figure {{ $figureNumber }}</span>
+    <span>{{ . }}</span>
+  </figcaption>
+  {{- end }}
+  {{- with $notes }}
+  <div class="annotation-list">
+    {{ $.Page.RenderString (dict "display" "block") . }}
+  </div>
+  {{- end }}
+</figure>
+
