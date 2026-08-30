@@ -4,7 +4,7 @@ series: "Korean Digital Ecosystem"
 part: "Part II.2"
 subtitle: "How Korea's national identity infrastructure connects everyday life and exposes every assumption about who belongs."
 date: 2026-08-30T06:24:00+08:00
-draft: true
+draft: false
 tags:
   - Tech
   - Korea
