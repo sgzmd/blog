@@ -14,7 +14,15 @@
           {{ range .Pages }}
           <li class="archive-item">
             <time class="archive-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-            <a class="archive-link" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ $post := . }}
+            <a class="archive-link" href="{{ .Permalink }}">
+              <span class="archive-link-title">{{ .Title }}</span>
+              {{ with .Params.series }}
+              <span class="post-list-series">
+                {{ . }}{{ with $post.Params.part }} <span aria-hidden="true">&middot;</span> {{ . }}{{ end }}
+              </span>
+              {{ end }}
+            </a>
           </li>
           {{ end }}
         </ul>
